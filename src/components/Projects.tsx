@@ -3,6 +3,20 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const projects = [
     {
+        title: "HRIS System",
+        description:
+            "An in-house Human Resource Information System designed to manage employee profiles, organizational structure, attendance, and role-based access with secure authentication.",
+        technologies: ["Angular", "Ionic", "Java", "Spring Boot", "PostgreSQL"],
+        featured: true,
+    },
+    {
+        title: "Seat Allocation System",
+        description:
+            "An internal seat allocation and management system that automates seat distribution based on predefined rules, employee preferences, and organizational hierarchy.",
+        technologies: ["React", "Express", "MongoDB", "OAuth", "NodeJS"],
+        featured: true,
+    },
+    {
         title: "Blog Platform",
         description:
             "A modern blogging platform with markdown support, user authentication, and comment system.",

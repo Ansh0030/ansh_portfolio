@@ -39,7 +39,7 @@ const experiences: ExperienceItem[] = [
             "Ionic",
             "PostgreSQL",
             "Git",
-            "Android Studio",
+            "Android Studio", "React", "Express JS", "Node.js", "RabbitMQ"
         ],
     },
     {
