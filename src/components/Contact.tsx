@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +10,17 @@ const Contact = () => {
     message: "",
   });
 
+  const URL = "https://portfolio-backend-beta-gold.vercel.app/api/v1/mail";
+
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation();
   const { ref: infoRef, isVisible: infoVisible } = useScrollAnimation();
   const { ref: formRef, isVisible: formVisible } = useScrollAnimation<HTMLFormElement>();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    const res = await axios.post(URL, formData);
+    console.log("Form submitted:", res);
+
   };
 
   const handleChange = (
