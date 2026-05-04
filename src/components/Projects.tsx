@@ -3,6 +3,33 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const projects = [
     {
+        title: "Project Manager Application",
+        description:
+            "A comprehensive project management tool to track tasks, organize workflows, and collaborate effectively.",
+        technologies: ["React", "Node.js", "Express", "MongoDB", "DNDkit"],
+        github: "https://github.com/Ansh0030/project-manager-frontend",
+        live: "https://project-manager-frontend-jade.vercel.app/",
+        featured: true,
+    },
+    {
+        title: "Blog Platform",
+        description:
+            "A modern blogging platform with markdown support, user authentication, and comment system.",
+        technologies: ["React", "Express", "MongoDB", "JWT"],
+        github: "https://github.com/Ansh0030/blog-ui",
+        live: "https://blog-ui-three.vercel.app/",
+        featured: false,
+    },
+    {
+        title: "Kanban Board",
+        description:
+            "An interactive Kanban board for visualizing work, limiting work-in-progress, and maximizing efficiency or flow.",
+        technologies: ["React", "Tailwind CSS"],
+        github: "https://github.com/Ansh0030/kanban_tree_demonstration",
+        live: "https://kanban-tree-demonstration.vercel.app/",
+        featured: true,
+    },
+    {
         title: "HRIS System",
         description:
             "An in-house Human Resource Information System designed to manage employee profiles, organizational structure, attendance, and role-based access with secure authentication.",
@@ -15,15 +42,6 @@ const projects = [
             "An internal seat allocation and management system that automates seat distribution based on predefined rules, employee preferences, and organizational hierarchy.",
         technologies: ["React", "Express", "MongoDB", "OAuth", "NodeJS"],
         featured: true,
-    },
-    {
-        title: "Blog Platform",
-        description:
-            "A modern blogging platform with markdown support, user authentication, and comment system.",
-        technologies: ["React", "Express", "MongoDB", "JWT"],
-        github: "https://github.com/Ansh0030/blog-ui",
-        live: "https://blog-ui-three.vercel.app/",
-        featured: false,
     },
     {
         title: "Weather Dashboard",
